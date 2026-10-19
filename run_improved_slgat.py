@@ -37,7 +37,7 @@ SELF_TRAIN_EPOCHS = 600
 PATIENCE = 100
 ALPHA = 0.5
 BETA = 0.5
-THRESHOLD = 0.8          # old 和 improved 统一用 0.8，保证公平对比
+THRESHOLD = 0.7          # old 和 improved 统一用 0.7，保证公平对比
 PSEUDO_TEMPERATURE = 0.1
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
