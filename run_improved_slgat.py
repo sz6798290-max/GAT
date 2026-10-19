@@ -27,7 +27,7 @@ DATASET_CONFIG = {
     "Pubmed":   {"hidden": 16, "label_hidden": 8,  "heads": 4},
 }
 
-SEEDS = [11,12,13,14,15,16,17,18,19,20]
+SEEDS = [34,72,198,264,588,699,795,854,961,1024]
 
 DROPOUT = 0.5
 LR = 0.005
