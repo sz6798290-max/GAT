@@ -1,8 +1,8 @@
 model.eval()
-    with torch.no_grad():
-        logits, _, _ = model(data.x, data.edge_index)
-        test_acc = accuracy(logits, data.y, data.test_mask)
-    return best_val, test_acc, selected_count
+with torch.no_grad():
+    logits, _, _ = model(data.x, data.edge_index)
+    test_acc = accuracy(logits, data.y, data.test_mask)
+return best_val, test_acc, selected_count
 
 
 # ============================================================
