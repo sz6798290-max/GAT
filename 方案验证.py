@@ -147,6 +147,12 @@ def train_and_eval(dataset_name, use_srqa, num_roles=8, seed=0, device='cpu'):
 
     data = dataset[0].to(device)
 
+    # 修复：Chameleon/Squirrel 的 mask 是 [N, 10]，取第一个划分
+    if data.train_mask.dim() == 2:
+        data.train_mask = data.train_mask[:, 0]
+        data.val_mask = data.val_mask[:, 0]
+        data.test_mask = data.test_mask[:, 0]
+
     # 结构描述子
     struct_desc = compute_structural_descriptors(data.edge_index.cpu(), data.num_nodes).to(device)
 
@@ -214,6 +220,10 @@ if __name__ == "__main__":
             mean = np.mean(accs)
             std = np.std(accs)
             method = "GAT + SRQA" if use_srqa else "GAT (baseline)"
+            gate_str = f"{np.mean(gates):.3f}" if gates else "-"
+            print(f"{ds:<12} {method:<15} {mean:.2f} ± {std:.2f}{'':<10} {gate_str:<10}")
+
+        print("-" * 80)
             gate_str = f"{np.mean(gates):.3f}" if gates else "-"
             print(f"{ds:<12} {method:<15} {mean:.2f} ± {std:.2f}{'':<10} {gate_str:<10}")
 
