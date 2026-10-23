@@ -1,5 +1,4 @@
 # 这段代码会自动把脚本保存为 消融对比2.py 并运行
-%%writefile 消融对比2.py
 # -*- coding: utf-8 -*-
 import os
 import csv
