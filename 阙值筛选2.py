@@ -21,7 +21,7 @@ from torch_geometric.nn import GCNConv
 from torch_geometric.utils import softmax, scatter
 
 # ============ 扫描配置 ============
-DATASET = "PubMed"
+DATASET = "Cora"
 THRESHOLDS = [0.5, 0.6, 0.7, 0.8, 0.9]
 SEEDS = [34, 72, 198, 284, 588, 699, 795, 854, 961, 1024]
 # ==================================
