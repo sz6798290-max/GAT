@@ -28,7 +28,7 @@ SEEDS = [34, 72, 198, 264, 588, 699, 795, 854, 961, 1024]
 
 HIDDEN = {"Cora": 32, "CiteSeer": 32, "PubMed": 16}
 LABEL_HIDDEN = {"Cora": 16, "CiteSeer": 16, "PubMed": 8}
-LR_MAP = {"Cora": 0.005, "CiteSeer": 0.005, "PubMed": 0.05}
+LR_MAP = {"Cora": 0.05, "CiteSeer": 0.005, "PubMed": 0.05}
 DROPOUT, WEIGHT_DECAY = 0.5, 5e-4
 PRETRAIN_EPOCHS, SELF_TRAIN_EPOCHS, PATIENCE, VALIDATE_EVERY = 200, 600, 100, 5
 ALPHA, BETA, TEMPERATURE, LAMBDA_U = 0.5, 0.5, 0.1, 1.0
