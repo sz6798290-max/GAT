@@ -23,7 +23,7 @@ from torch_geometric.utils import softmax, scatter
 # ============ 扫描配置 ============
 DATASET = "PubMed"
 THRESHOLDS = [0.5, 0.6, 0.7, 0.8, 0.9]
-SEEDS = [34, 72, 198, 264, 588, 699, 795, 854, 961, 1024]
+SEEDS = [34, 72, 198, 284, 588, 699, 795, 854, 961, 1024]
 # ==================================
 
 HIDDEN = {"Cora": 32, "CiteSeer": 32, "PubMed": 16}
