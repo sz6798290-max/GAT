@@ -21,7 +21,7 @@ from torch_geometric.utils import softmax, scatter, to_undirected
 # ====== 边扰动实验配置 ======
 DATASET = "Cora"
 SEEDS = [34, 72, 198, 284, 588, 699, 795, 854, 961, 1024]
-DROP_RATIO = 0.15                     # 删除 15% 的边
+DROP_RATIO = 0.30                     # 删除 15% 的边
 PERTURB_SEED = 0                      # 固定扰动，确保所有训练种子看到同一个扰动图
 CONFIGS = [
     ("Confidence-only", 1.0, 0.0),
