@@ -21,7 +21,7 @@ from torch_geometric.utils import softmax, scatter
 
 # ====== 消融配置 ======
 DATASETS = ["Cora", "CiteSeer"]
-SEEDS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+SEEDS = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 # (名称, alpha, beta)；alpha=None 表示不筛选（SLGAT 基线）
 ABLATION = [
     ("SLGAT (w/o selection)", None, None),
