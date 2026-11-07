@@ -20,7 +20,7 @@ from torch_geometric.utils import softmax, scatter
 
 # ====== 实验配置 ======
 DATASETS = ["Cora", "CiteSeer", "PubMed"]
-SEEDS = [34, 72, 198, 284, 588, 699, 795, 854, 961, 1024]
+SEEDS = [209,216,225,293,593]
 THRESHOLD = 0.8            # ← 由完整版拓扑打分扫描确定（三数据集 Val/Test 双第一）
 # =====================
 
