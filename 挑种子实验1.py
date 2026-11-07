@@ -20,7 +20,7 @@ from torch_geometric.utils import softmax, scatter
 
 # ====== 实验配置 ======
 DATASETS = ["Cora", "CiteSeer", "PubMed"]
-SEEDS = list(range(301, 401))  # 1 到 100
+SEEDS = list(range(401, 501))  # 1 到 100
 THRESHOLD = 0.8
 # =====================
 
